@@ -5,11 +5,11 @@ String [] description =
   //0
   "You woke up in dis weird place and u gotta escape to live",
   //1
-  "You are in the LEFT CHAMBER. Go left to return to start, go right to see the dog statue.",
+  "You are in the left side of this random place. Go left to  get back to the first room for whatever reason, go right to see the dog statue.",
   //2
-  "You went right",
+  "You went over to the right side",
   //3
-  "The dog statue is so cool.",
+  "The dog statue is so swag.",
   //4
   "Dog go bark. Wonder where it came from",
   //5
@@ -44,6 +44,14 @@ String [] description =
   "Good job they all dead and now we in new place",
   //20
   "They bit you and you got rabies rip",
+  //21
+  "Ooo a cat paintin, now what goin on",
+  //22
+  "Dang nothin here go back",
+  //23
+  "Ooo cat statueeeeee ",
+  //24
+  "Yay no painting now, hopefully"
 };
 
 //Player's data
@@ -83,6 +91,12 @@ int changeRoom()
     return 18;
   case 18:
     return 19;
+  case 19:
+    return 21;
+  case 21:
+    return 23;
+  case 22:
+    return 19;
   default:
     return 0;
   }
@@ -118,6 +132,12 @@ int changeRoom()
     return 18;
   case 18:
     return 20;
+  case 19:
+    return 22;
+  case 21:
+    return 22;
+  case 22:
+    return 19;
   default:
     return 0;
   }
